@@ -94,8 +94,22 @@ public class Main {
                 case 1:
                     addEmployee();
                     break;
+                case 2:
+                    viewEmployees();
+                    break;
+                case 3:
+                    searchEmployees();
+                    break;
+                case 4:
+                    deleteEmployees();
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid Choice");
+
             }
         }
     }
 }
-
