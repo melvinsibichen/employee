@@ -47,6 +47,27 @@ public class Main {
     }
 
 
+    static void searchEmployees() {
+        System.out.print("Enter employee code:");
+        double code = sc.nextDouble();
+        for(int i = 0; i < userList.size(); i++) {
+            if(userList.get(i).get(0).equals(code)) {
+                System.out.println("------------------------------------------");
+                System.out.println("Employee code "+ userList.get(i).get(0));
+                System.out.println("Employee name "+ userList.get(i).get(1));
+                System.out.println("Employee designation "+ userList.get(i).get(2));
+                System.out.println("Employee salary "+ userList.get(i).get(3));
+                System.out.println("Company name "+ userList.get(i).get(4));
+                System.out.println("Employee phone "+ userList.get(i).get(5));
+                System.out.println("Employee email "+ userList.get(i).get(6));
+                System.out.println("------------------------------------------");
+                break;
+            }
+        }
+
+    }
+
+
     public static void main(String[] args) {
         while(true) {
         System.out.println(" 1:add employee");
