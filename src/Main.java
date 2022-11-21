@@ -67,6 +67,18 @@ public class Main {
 
     }
 
+    static void deleteEmployees() {
+        System.out.print("Enter employee code to remove:");
+        double code = sc.nextDouble();
+        for(int i = 0; i < userList.size(); i++) {
+            if(userList.get(i).get(0).equals(code)) {
+                userList.remove(i);
+                System.out.println("Employee removed successfully");
+                break;
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         while(true) {
